@@ -155,7 +155,7 @@ class BiometricStorageImpl {
         }
       let access = SecAccessControlCreateWithFlags(nil, // Use the default allocator.
         kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly,
-        .biometricAny,
+        .biometryAny,
         nil) // Ignore any error.
       query.merge([
         kSecUseAuthenticationContext as String: context,
